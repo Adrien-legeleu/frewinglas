@@ -1,20 +1,47 @@
+"use client";
 import Image from "next/image";
 import Img from "@/public/image/frewinglas.jpg";
+import { motion } from "framer-motion";
 
 export default function Advantage() {
   return (
-    <div className="h-screen w-full items-center px-10 gap-5 justify-center flex flex-col">
-      <h2 className="text-3xl tracking-wider">Menuiseries de qualités</h2>
-      <p className="max-w-2xl text-center">
+    <div className="h-screen w-full items-center px-10 py-32 gap-5 justify-center flex flex-col">
+      <h2 className="text-3xl tracking-wider font-semibold">
+        Menuiseries de qualités
+      </h2>
+      <motion.p
+        initial={{ y: 40, opacity: 0 }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+          transition: { duration: 0.5, ease: "easeInOut" },
+        }}
+        viewport={{ amount: 0.5 }}
+        className="max-w-2xl text-center"
+      >
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ab,
         rerum voluptatem deleniti dolorem doloribus quidem velit maxime!
         Perferendis quibusdam quia aspernatur at laborum, ducimus veritatis
         minus cupiditate. Consequatur dolorum mollitia odio?
-      </p>
+      </motion.p>
       <ul className="grid grid-cols-3 gap-10 pt-10   justify-center ">
         {AdvantageList.map((advatage, index) => {
           return (
-            <li key={index} className="space-y-5">
+            <motion.li
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.5,
+                  ease: "easeInOut",
+                  delay: 0.3 * index,
+                },
+              }}
+              viewport={{ amount: 0 }}
+              key={index}
+              className="space-y-5"
+            >
               <Image
                 className="rounded-3xl"
                 src={advatage.src}
@@ -24,9 +51,11 @@ export default function Advantage() {
               />
               <div className="space-y-2">
                 <h3 className="text-xl">{advatage.title}</h3>
-                <p className="tracking-wider">{advatage.desc}</p>
+                <p className="tracking-wider text-sm text-muted-foreground">
+                  {advatage.desc}
+                </p>
               </div>
-            </li>
+            </motion.li>
           );
         })}
       </ul>

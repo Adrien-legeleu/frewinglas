@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @layer utilities {
@@ -13,32 +14,57 @@ body {
 }
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+:root {
+    --background: 220 28% 16%;
+    /* Bleu marine sombre pour le fond */
+    --foreground: 60 90% 95%;
+    /* Blanc cassé pour un texte clair */
+    --card: 220 25% 20%;
+    /* Bleu marine un peu plus clair pour les cartes */
+    --card-foreground: 60 90% 95%;
+    /* Même blanc cassé pour contraste */
+    --popover: 220 25% 18%;
+    /* Popover dans le même ton que le fond */
+    --popover-foreground: 60 90% 95%;
+    /* Texte clair dans les popovers */
+    --primary: 75 81% 56%;
+    /* Vert vif pour les éléments principaux */
+    --primary-foreground: 220 28% 16%;
+    /* Texte foncé pour contraste sur le vert */
+    --secondary: 220 25% 22%;
+    /* Secondaire légèrement plus clair que le fond */
+    --secondary-foreground: 60 90% 80%;
+    /* Texte secondaire moins contrasté */
+    --muted: 220 20% 26%;
+    /* Zones atténuées */
+    --muted-foreground: 180 35% 55%;
+    /* Texte atténué */
+    --accent: 75 81% 56%;
+    /* Accent vert vif (comme le logo) */
+    --accent-foreground: 220 28% 16%;
+    /* Contraste foncé sur le vert */
+    --destructive: 0 84% 55%;
+    /* Rouge vif pour les actions destructives */
+    --destructive-foreground: 60 90% 95%;
+    /* Texte clair pour les actions destructives */
+    --border: 220 20% 30%;
+    /* Bordures discrètes */
+    --input: 220 25% 20%;
+    /* Zones d’entrée dans un bleu légèrement plus clair */
+    --ring: 75 81% 56%;
+    /* Anneaux dans le vert vif */
+    --chart-1: 75 81% 56%;
+    /* Couleurs des graphiques (reprenant le vert vif) */
+    --chart-2: 220 28% 16%;
+    /* Bleu marine */
+    --chart-3: 60 90% 95%;
+    /* Blanc cassé */
+    --chart-4: 220 20% 22%;
+    /* Bleu secondaire */
+    --chart-5: 0 84% 55%;
+    /* Rouge destructif */
     --radius: 0.5rem;
+    /* Rayon standard pour les bordures */
   }
   .dark {
     --background: 0 0% 3.9%;
