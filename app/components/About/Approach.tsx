@@ -1,3 +1,9 @@
+import {
+  IconEar,
+  IconHeadset,
+  IconRosetteDiscountCheckFilled,
+} from "@tabler/icons-react";
+
 export default function Approach() {
   return (
     <div className="h-screen px-10 items-center justify-center flex flex-col gap-5 py-32">
@@ -13,23 +19,16 @@ export default function Approach() {
         {ApproachList.map((item, index) => {
           return (
             <div className="w-full bg-[#181e2b] shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-10 rounded-3xl space-y-3 relative overflow-hidden">
-              <div className="w-24 h-24 bg-violet-500 rounded-full absolute -right-5 -top-7">
+              <div className="w-24 h-24 bg-background brightness-[150%] rounded-full absolute -right-5 -top-7">
                 <p className="absolute bottom-6 left-7 text-white text-2xl">
                   0{index + 1}
                 </p>
               </div>
-              <div className="fill-violet-500 w-12">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="Layer_1"
-                  data-name="Layer 1"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Zm-12.749,3.094C19.058.891,19.093.855,19.11.838c1.118-1.115,2.936-1.113,4.052.002,1.114,1.117,1.114,2.936,0,4.052l-8.185,8.828c-.116,1.826-1.623,3.281-3.478,3.281h-5.59l.097-.582c.043-.257,1.086-6.16,5.244-6.396Zm2.749,3.478c0-1.379-1.122-2.5-2.5-2.5-2.834,0-4.018,3.569-4.378,5h4.378c1.378,0,2.5-1.121,2.5-2.5Zm.814-1.073l2.066-2.229c-.332-1.186-1.371-2.057-2.606-2.172-.641.749-1.261,1.475-1.817,2.125,1.117.321,1.998,1.176,2.357,2.277Zm.208-5.276c1.162.313,2.125,1.134,2.617,2.229l4.803-5.18c.737-.741.737-1.925.012-2.653-.724-.725-1.908-.727-2.637,0-.069.08-2.435,2.846-4.795,5.606Z"></path>
-                </svg>
-              </div>
+              <div className="text-secondary brightness-150 ">{item.icon}</div>
               <h1 className="font-bold text-xl">{item.title}</h1>
-              <p className="text-sm text-zinc-500 leading-6">{item.desc}</p>
+              <p className="text-sm text-muted-foreground leading-6">
+                {item.desc}
+              </p>
             </div>
           );
         })}
@@ -37,18 +36,20 @@ export default function Approach() {
     </div>
   );
 }
-
 const ApproachList = [
   {
-    title: "�coute Active",
-    desc: "Nous �coutons attentivement les besoins de nos clients pour garantir que nos solutions personnalis�es r�pondent � leurs attentes.",
+    title: "Écoute Active",
+    desc: "Nous écoutons attentivement les besoins de nos clients pour garantir que nos solutions personnalisées répondent à leurs attentes.",
+    icon: <IconEar className="w-20 h-20" />,
   },
   {
     title: "Expertise Technique",
-    desc: "Des produits fabriqu�s en France avec les normes de qualit� les plus �lev�es, garantissant une durabilit� exceptionnelle.",
+    desc: "Des produits fabriqués en France avec les normes de qualité les plus élevées, garantissant une durabilité exceptionnelle.",
+    icon: <IconRosetteDiscountCheckFilled className="w-20 h-20" />,
   },
   {
     title: "Engagement Continu",
-    desc: "Nous nous engageons � accompagner nos clients tout au long du processus, en assurant un suivi continu et un service apr�s-vente de qualit�.",
+    desc: "Nous nous engageons à accompagner nos clients tout au long du processus, en assurant un suivi continu et un service après-vente de qualité.",
+    icon: <IconHeadset className="w-20 h-20" />,
   },
 ];

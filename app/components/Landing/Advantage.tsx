@@ -7,7 +7,7 @@ export default function Advantage() {
   return (
     <div className="h-screen w-full items-center px-10 py-32 gap-5 justify-center flex flex-col">
       <h2 className="text-3xl tracking-wider font-semibold">
-        Menuiseries de qualités
+        Avantages des Menuiseries Frewinglas
       </h2>
       <motion.p
         initial={{ y: 40, opacity: 0 }}
@@ -19,13 +19,12 @@ export default function Advantage() {
         viewport={{ amount: 0.5 }}
         className="max-w-2xl text-center"
       >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ab,
-        rerum voluptatem deleniti dolorem doloribus quidem velit maxime!
-        Perferendis quibusdam quia aspernatur at laborum, ducimus veritatis
-        minus cupiditate. Consequatur dolorum mollitia odio?
+        Découvrez les atouts de nos menuiseries en aluminium sur mesure :
+        performance, design, et sécurité. Des solutions idéales pour sublimer
+        vos projets architecturaux.
       </motion.p>
-      <ul className="grid grid-cols-3 gap-10 pt-10   justify-center ">
-        {AdvantageList.map((advatage, index) => {
+      <ul className="grid grid-cols-3 gap-10 pt-10 justify-center">
+        {AdvantageList.map((advantage, index) => {
           return (
             <motion.li
               initial={{ y: 40, opacity: 0 }}
@@ -44,15 +43,15 @@ export default function Advantage() {
             >
               <Image
                 className="rounded-3xl"
-                src={advatage.src}
+                src={advantage.src}
                 alt="Frewinglas"
                 width={500}
                 height={500}
               />
               <div className="space-y-2">
-                <h3 className="text-xl">{advatage.title}</h3>
+                <h3 className="text-xl">{advantage.title}</h3>
                 <p className="tracking-wider text-sm text-muted-foreground">
-                  {advatage.desc}
+                  {advantage.desc}
                 </p>
               </div>
             </motion.li>
@@ -66,17 +65,17 @@ export default function Advantage() {
 const AdvantageList = [
   {
     title: "Isolation Optimale",
-    desc: "Profitez d'une isolation thermique performante pour un confort optimal en toutes saisons.",
+    desc: "Profitez d'une isolation thermique de qualité supérieure pour un confort inégalé toute l'année.",
     src: Img,
   },
   {
-    title: "Design Sur-Mesure",
-    desc: "Personnalisez entièrement le design de vos espaces avec nos menuiseries aluminium uniques.",
+    title: "Design Personnalisé",
+    desc: "Créez des espaces uniques avec nos menuiseries aluminium sur mesure, alliant style et fonctionnalité.",
     src: Img,
   },
   {
-    title: "Sécurité Garantie",
-    desc: "Assurez la protection de vos proches et de vos biens avec nos produits aux caractéristiques de sécurité renforcées.",
+    title: "Sécurité Renforcée",
+    desc: "Garantissez la sécurité de votre habitat avec nos solutions robustes et des caractéristiques avancées de protection.",
     src: Img,
   },
 ];

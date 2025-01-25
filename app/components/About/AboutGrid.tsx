@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Img from "@/public/image/frewinglas.jpg";
-
 const content = [
   {
-    title: "� Propos de Frewin????",
+    title: "À Propos de Frewinglas",
     description:
-      "Frewinglas incarne l’innovation et la qualit�, d�di�e � la menuiserie aluminium pour les professionnels en France, offrant un design ext�rieur et int�rieur distinctif.Notre expertise depuis 2023 s’illustre par des produits sur mesure alliant isolation thermique pointue, design minimaliste et s�curit� renforc�e.",
+      "Frewinglas incarne l’innovation et la qualité, dédiée à la menuiserie aluminium pour les professionnels en France, offrant un design extérieur et intérieur distinctif. Notre expertise depuis 2023 s’illustre par des produits sur mesure alliant isolation thermique pointue, design minimaliste et sécurité renforcée.",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full flex items-center justify-center text-white">
         <Image
           src={Img}
           width={300}
@@ -21,9 +20,9 @@ const content = [
   {
     title: "Notre Mission",
     description:
-      "Chez Frewin????, notre mission est de r�volutionner le secteur de la menuiserie en aluminium en introduisant des produits innovants, r�pondant aux normes les plus �lev�es de qualit� et de s�curit�, tout en offrant un service client in�gal� r�serv� au professionnels",
+      "Chez Frewin, notre mission est de révolutionner le secteur de la menuiserie en aluminium en introduisant des produits innovants, répondant aux normes les plus élevées de qualité et de sécurité, tout en offrant un service client inégalé réservé aux professionnels.",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full flex items-center justify-center text-white">
         <Image
           src={Img}
           width={300}
@@ -37,9 +36,9 @@ const content = [
   {
     title: "Nos Valeurs Fondamentales",
     description:
-      "Qualit� Exceptionnelle : Nous nous engageons � fournir des menuiseries aluminium de la plus haute qualit�, fabriqu�es en France, pour r�pondre aux besoins les plus exigeants.Innovation continue : Nous sommes passionn�s par l�innovation et nous nous effor�ons d�apporter en permanence de nouvelles id�es et technologies � nos produits.Service Client�le : La satisfaction de nos clients est notre priorit� absolue, nous nous engageons � offrir un service professionnel et personnalis� � chaque �tape de notre relation.",
+      "Qualité Exceptionnelle : Nous nous engageons à fournir des menuiseries aluminium de la plus haute qualité, fabriquées en France, pour répondre aux besoins les plus exigeants. Innovation continue : Nous sommes passionnés par l’innovation et nous nous efforçons d’apporter en permanence de nouvelles idées et technologies à nos produits. Service Clientèle : La satisfaction de nos clients est notre priorité absolue, nous nous engageons à offrir un service professionnel et personnalisé à chaque étape de notre relation.",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full flex items-center justify-center text-white">
         <Image
           src={Img}
           width={300}
@@ -51,6 +50,7 @@ const content = [
     ),
   },
 ];
+
 export default function AboutGrid() {
   return (
     <ul className="px-10 space-y-16">
