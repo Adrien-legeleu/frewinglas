@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function LandingPage() {
   return (
-    <div className="h-screen w-full items-center justify-center gap-5 flex flex-col bg-cover bg-top">
+    <div className="h-screen w-full px-10 items-center justify-center gap-5 flex flex-col bg-cover bg-top">
       <h1 className="text-6xl z-10 text-shadow text-shadow-blur-4">
         Frewinglas
       </h1>
@@ -14,10 +14,10 @@ export default function LandingPage() {
         projets architecturaux.
       </p>
       <div className="flex gap-5 z-10">
-        <Button className="text p-5 rounded-2xl" variant={"secondary"}>
+        <Button className="text p-6 rounded-2xl" variant={"secondary"}>
           Nous contacter
         </Button>
-        <Button className="text p-5 rounded-2xl" variant={"secondary"}>
+        <Button className="text p-6 rounded-2xl" variant={"secondary"}>
           Notre portfolio
         </Button>
       </div>
@@ -26,14 +26,14 @@ export default function LandingPage() {
         alt="Fabrication métallique Frewinglas"
         height={500}
         width={500}
-        className="absolute rounded-3xl object-cover top-[22%] h-4/5 w-96 left-20"
+        className="absolute rounded-3xl brightness-[80%] object-cover md:top-[22%] top-[5%] lg:h-4/5 md:h-2/3 sm:h-64 h-52 w-64 lg:w-80 xl:w-96 lg:left-20 left-10"
       />
       <Image
         src={Img}
         alt="Produits métalliques sur mesure Frewinglas"
         height={500}
         width={500}
-        className="absolute rounded-3xl object-cover top-1/3 h-3/4 w-96 right-20"
+        className="absolute rounded-3xl brightness-[80%] object-cover md:top-1/3 top-[55%] lg:h-3/4 md:h-2/3 sm:h-64 h-52 w-64 lg:w-80 xl:w-96 lg:right-20 right-10"
       />
     </div>
   );

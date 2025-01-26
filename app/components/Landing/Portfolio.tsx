@@ -27,37 +27,37 @@ const cards = [
   {
     id: 1,
     content: <div />,
-    className: "md:col-span-1",
+    className: "md:col-span-1 col-span-3",
     thumbnail: Img,
   },
   {
     id: 2,
     content: <div />,
-    className: "md:col-span-2",
+    className: "md:col-span-2 col-span-2",
     thumbnail: Img,
   },
   {
     id: 3,
     content: <div />,
-    className: "md:col-span-2",
+    className: "md:col-span-2 col-span-1",
     thumbnail: Img,
   },
   {
     id: 4,
     content: <div />,
-    className: "md:col-span-2",
+    className: "md:col-span-2 col-span-4",
     thumbnail: Img,
   },
   {
     id: 5,
     content: <div />,
-    className: "md:col-span-2",
+    className: "md:col-span-2 col-span-2",
     thumbnail: Img,
   },
   {
     id: 6,
     content: <div />,
-    className: "md:col-span-1",
+    className: "md:col-span-1 col-span-3",
     thumbnail: Img,
   },
 ];

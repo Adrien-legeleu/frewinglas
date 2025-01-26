@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 export default function Advantage() {
   return (
-    <div className="h-screen w-full items-center px-10 py-32 gap-5 justify-center flex flex-col">
-      <h2 className="text-3xl tracking-wider font-semibold">
+    <div className="md:h-screen h-full w-full items-center px-10 py-32 gap-5 justify-center flex flex-col">
+      <h2 className="text-3xl tracking-wider text-center font-semibold">
         Avantages des Menuiseries Frewinglas
       </h2>
       <motion.p
@@ -23,7 +23,7 @@ export default function Advantage() {
         performance, design, et sécurité. Des solutions idéales pour sublimer
         vos projets architecturaux.
       </motion.p>
-      <ul className="grid grid-cols-3 gap-10 pt-10 justify-center">
+      <ul className="grid md:grid-cols-3 grid-cols-1 lg:gap-10 gap-8 pt-10 md:justify-center">
         {AdvantageList.map((advantage, index) => {
           return (
             <motion.li
@@ -39,18 +39,20 @@ export default function Advantage() {
               }}
               viewport={{ amount: 0 }}
               key={index}
-              className="space-y-5"
+              className="md:space-y-5 max-md:grid max-md:grid-cols-2 max-md:gap-10 items-center"
             >
               <Image
-                className="rounded-3xl"
+                className="rounded-3xl max-md:order-2"
                 src={advantage.src}
                 alt="Frewinglas"
                 width={500}
                 height={500}
               />
               <div className="space-y-2">
-                <h3 className="text-xl">{advantage.title}</h3>
-                <p className="tracking-wider text-sm text-muted-foreground">
+                <h3 className="text-base sm:text-lg md:text-xl">
+                  {advantage.title}
+                </h3>
+                <p className="tracking-wider sm:text-sm text-xs text-muted-foreground">
                   {advantage.desc}
                 </p>
               </div>

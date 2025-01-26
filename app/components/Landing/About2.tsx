@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 export default function About2() {
   return (
-    <div className="flex items-center gap-5 flex-col max-w-xl mx-auto  text-center py-32">
+    <div className="flex items-center gap-5 flex-col max-w-xl mx-auto px-10 text-center py-32">
       <motion.h2
         initial={{ y: 40, opacity: 0 }}
         whileInView={{
@@ -24,7 +24,7 @@ export default function About2() {
         animation="blurInUp"
         by="word"
         delay={0}
-        className="tracking-wide text-muted-foreground text-lg "
+        className="tracking-wide text-muted-foreground sm:text-lg "
       >
         Frewinglas incarne l'innovation et l'excellence dans la menuiserie
         aluminium pour les professionnels en France, en proposant des designs
@@ -36,14 +36,14 @@ export default function About2() {
         animation="blurInUp"
         by="word"
         delay={3}
-        className="tracking-wide text-muted-foreground text-lg "
+        className="tracking-wide text-muted-foreground sm:text-lg "
       >
         Grâce à notre expertise, nous concrétisons des projets uniques, qu'ils
         soient modestes ou ambitieux, tout en maintenant une qualité
         irréprochable.
       </TextAnimate>
 
-      <ul className="flex flex-col text-muted-foreground items-center gap-2 mx-auto max-w-auto">
+      <ul className="flex flex-col text-muted-foreground max-sm:text-sm items-center gap-2 mx-auto max-w-auto">
         <motion.li
           initial={{ y: 40, opacity: 0 }}
           whileInView={{
