@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import Img from "@/public/image/frewinglas.jpg";
+import Img1 from "@/public/breton.jpg";
+import Img2 from "@/public/IMG_1042.png";
 import Image from "next/image";
 
 export default function LandingPage() {
@@ -22,14 +23,14 @@ export default function LandingPage() {
         </Button>
       </div>
       <Image
-        src={Img}
+        src={Img1}
         alt="Fabrication métallique Frewinglas"
         height={500}
         width={500}
         className="absolute rounded-3xl brightness-[80%] object-cover md:top-[22%] top-[5%] lg:h-4/5 md:h-2/3 sm:h-64 h-52 w-64 lg:w-80 xl:w-96 lg:left-20 left-10"
       />
       <Image
-        src={Img}
+        src={Img2}
         alt="Produits métalliques sur mesure Frewinglas"
         height={500}
         width={500}

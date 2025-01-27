@@ -6,7 +6,7 @@ import ContactForm from "../components/Contact/contactForm";
 
 export default function page() {
   return (
-    <div className="grid grid-cols-2 items-start  px-10 gap-10 h-screen pt-32 ">
+    <div className="grid md:grid-cols-2 grid-cols-1 items-start  sm:px-10 px-5 gap-10 h-full pt-32 ">
       <div className="flex flex-col justify-start items-center gap-5 bg-secondary p-6 rounded-3xl">
         <div>
           <h1 className="text-4xl text-center font-semibold tracking-wider">

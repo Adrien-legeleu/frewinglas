@@ -56,14 +56,16 @@ export default function AboutGrid() {
     <ul className="px-10 space-y-16">
       {content.map((item, index) => (
         <li key={index}>
-          <div className="grid grid-cols-2 items-center gap-10">
+          <div className="grid md:grid-cols-2 grid-cols-1 max-sm:text-center items-center md:gap-10 gap-5">
             <div
-              className={`${index % 2 === 0 ? "order-1" : "order-2"} space-y-5`}
+              className={`${index % 2 === 0 ? "order-1" : "md:order-2"} space-y-5`}
             >
-              <h1 className="text-3xl font-bold">{item.title}</h1>
-              <p className="leading-loose">{item.description}</p>
+              <h1 className="md:text-3xl text-2xl font-bold">{item.title}</h1>
+              <p className="leading-loose  text-sm md:text-base">
+                {item.description}
+              </p>
             </div>
-            <div className={`${index % 2 === 0 ? "order-2" : "order-1"}`}>
+            <div className={`${index % 2 === 0 ? "order-2" : "md:order-1"}`}>
               {item.content}
             </div>
           </div>

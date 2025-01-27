@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 export default function About2() {
   return (
-    <div className="flex items-center gap-5 flex-col max-w-xl mx-auto px-10 text-center py-32">
+    <div className="flex items-center gap-5 flex-col max-w-xl mx-auto px-10 text-center pb-32">
       <motion.h2
         initial={{ y: 40, opacity: 0 }}
         whileInView={{

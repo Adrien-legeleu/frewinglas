@@ -20,52 +20,74 @@ export default function ProductsGrid() {
     </div>
   );
 }
-
 const ProductDetails = ({ product }: any) => (
   <div className="p-5 border rounded-lg shadow-lg">
     <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
-    <div className="mb-4">
-      <h3 className="text-xl font-semibold">Technical Specifications</h3>
-      <ul className="list-disc list-inside">
-        <li>Depth: {product.technical.depth}</li>
-        <li>Thermal: {product.technical.thermal}</li>
-        <li>Acoustic: {product.technical.acoustic}</li>
-        <li>Water Tightness: {product.technical.waterTightness}</li>
-        <li>Air Permeability: {product.technical.airPermeability}</li>
-        <li>Wind Resistance: {product.technical.windResistance}</li>
+    <p className="mb-6 text-muted-foreground">{product.description}</p>
+
+    <div className="mb-6 space-y-4">
+      <h3 className="text-xl font-semibold">Caractéristiques techniques</h3>
+      <ul className="list-disc list-inside text-muted-foreground">
+        {product.technicalFeatures
+          .trim()
+          .split("\n")
+          .map((feature: string, index: number) => (
+            <li key={index}>{feature}</li>
+          ))}
       </ul>
     </div>
-    <div className="mb-4">
+
+    <div className="mb-6 space-y-4">
       <h3 className="text-xl font-semibold">Design</h3>
-      <ul className="list-disc list-inside">
-        {product.design.map((item: any, index: any) => (
-          <li key={index}>{item}</li>
-        ))}
+      <ul className="list-disc list-inside text-muted-foreground">
+        {product.design
+          .trim()
+          .split("\n")
+          .map((item: string, index: number) => (
+            <li key={index}>{item}</li>
+          ))}
       </ul>
     </div>
-    <div className="mb-4">
-      <h3 className="text-xl font-semibold">Features</h3>
-      <ul className="list-disc list-inside">
-        {product.features.map((item: any, index: any) => (
-          <li key={index}>{item}</li>
-        ))}
+
+    <div className="mb-6 space-y-4">
+      <h3 className="text-xl font-semibold">Utilisation</h3>
+      <ul className="list-disc list-inside text-muted-foreground">
+        {product.usage
+          .trim()
+          .split("\n")
+          .map((item: string, index: number) => (
+            <li key={index}>{item}</li>
+          ))}
       </ul>
     </div>
-    <div className="mb-4">
-      <h3 className="text-xl font-semibold">Durability</h3>
-      <ul className="list-disc list-inside">
-        {product.durability.map((item: any, index: any) => (
-          <li key={index}>{item}</li>
-        ))}
+
+    <div className="mb-6 space-y-4">
+      <h3 className="text-xl font-semibold">Durabilité</h3>
+      <ul className="list-disc list-inside text-muted-foreground">
+        {product.durability
+          .trim()
+          .split("\n")
+          .map((item: string, index: number) => (
+            <li key={index}>{item}</li>
+          ))}
       </ul>
     </div>
-    <div className="mb-4">
-      <h3 className="text-xl font-semibold">Security</h3>
-      <ul className="list-disc list-inside">
-        {product.security.map((item: any, index: any) => (
-          <li key={index}>{item}</li>
-        ))}
+
+    <div className="mb-6 space-y-4">
+      <h3 className="text-xl font-semibold">Sécurité</h3>
+      <ul className="list-disc list-inside text-muted-foreground">
+        {product.security
+          .trim()
+          .split("\n")
+          .map((item: string, index: number) => (
+            <li key={index}>{item}</li>
+          ))}
       </ul>
+    </div>
+
+    <div className="mt-6 space-y-4">
+      <h3 className="text-lg font-bold">Résumé</h3>
+      <p className="text-muted-foreground">{product.summary}</p>
     </div>
   </div>
 );

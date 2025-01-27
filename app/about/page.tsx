@@ -6,7 +6,7 @@ import Approach from "../components/About/Approach";
 export default function Page() {
   return (
     <div className="space-y-32">
-      <div className="flex items-center h-[50vh] max-w-4xl mx-auto space-y-5 justify-end flex-col">
+      <div className="flex items-center h-[50vh] max-w-4xl mx-auto space-y-5 [868px]:justify-end justify-center px-10 flex-col">
         <h1 className="text-4xl text-center font-semibold tracking-wider">
           À propos de Frewinglas
         </h1>

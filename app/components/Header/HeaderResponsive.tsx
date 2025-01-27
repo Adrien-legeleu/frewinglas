@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { Variants } from "motion/react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function HeaderResponsive() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,35 +9,70 @@ export default function HeaderResponsive() {
   const handleHeader = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
-      <label className="flex fixed flex-col  top-5 right-5 z-[100] gap-2 w-8">
-        <input className="peer hidden" type="checkbox" onClick={handleHeader} />
-        <div className="rounded-2xl h-[3px] w-1/2 bg-primary duration-500 peer-checked:rotate-[225deg] origin-right peer-checked:-translate-x-[12px] peer-checked:-translate-y-[1px]"></div>
-        <div className="rounded-2xl h-[3px] w-full bg-primary duration-500 peer-checked:-rotate-45"></div>
-        <div className="rounded-2xl h-[3px] w-1/2 bg-primary duration-500 place-self-end peer-checked:rotate-[225deg] origin-left peer-checked:translate-x-[12px] peer-checked:translate-y-[1px]"></div>
-      </label>
+      <div
+        className="flex fixed flex-col top-10 right-6 z-[100] gap-2 w-10 cursor-pointer"
+        onClick={handleHeader}
+      >
+        <div
+          className={`rounded-2xl h-[4px] w-1/2 bg-primary duration-500 transform ${
+            isOpen
+              ? "rotate-[225deg] origin-right -translate-x-[12px] -translate-y-[1px]"
+              : ""
+          }`}
+        ></div>
+        <div
+          className={`rounded-2xl h-[4px] w-full bg-primary duration-500 ${
+            isOpen ? "-rotate-45" : ""
+          }`}
+        ></div>
+        <div
+          className={`rounded-2xl h-[4px] w-1/2 bg-primary duration-500 place-self-end transform ${
+            isOpen
+              ? "rotate-[225deg] origin-left translate-x-[12px] translate-y-[1px]"
+              : ""
+          }`}
+        ></div>
+      </div>
 
       <div
-        className={` fixed top-0 left-0 h-screen w-full flex-col z-[99] bg-background items-center justify-center gap-10 ${isOpen ? "flex" : "hidden"} `}
+        className={`fixed top-0 left-0 h-screen w-full flex-col z-[99] bg-background items-center justify-center gap-10 ${
+          isOpen ? "flex" : "hidden"
+        }`}
       >
         <ul className="flex flex-col gap-5 text-lg tracking-wider font-semibold items-center justify-center">
-          <li className="hover:text-primary cursor-pointer">
-            <a href={"/"}>Home</a>
+          <li
+            className="hover:text-primary cursor-pointer"
+            onClick={handleHeader}
+          >
+            <Link href={"/"}>Home</Link>
           </li>
-          <li className="hover:text-primary cursor-pointer">
-            <a href={"/about"}>A propos</a>
+          <li
+            className="hover:text-primary cursor-pointer"
+            onClick={handleHeader}
+          >
+            <Link href={"/about"}>A Propos</Link>
           </li>
-          <li className="hover:text-primary cursor-pointer">
-            <a href={"/products"}>Produits</a>
+          <li
+            className="hover:text-primary cursor-pointer"
+            onClick={handleHeader}
+          >
+            <Link href={"/products"}>Produits</Link>
           </li>
-          <li className="hover:text-primary cursor-pointer">
-            <a href={"/blog"}>Blog</a>
+          <li
+            className="hover:text-primary cursor-pointer"
+            onClick={handleHeader}
+          >
+            <Link href={"/blog"}>Blog</Link>
           </li>
         </ul>
-        <Button className="p-6 rounded-2xl" variant={"secondary"}>
-          Contactez-nous
-        </Button>
+        <Link href={"/contact"} onClick={handleHeader}>
+          <Button className="p-6 rounded-2xl" variant={"secondary"}>
+            Contactez-nous
+          </Button>
+        </Link>
       </div>
     </>
   );

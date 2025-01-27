@@ -39,7 +39,7 @@ const cards = [
   {
     id: 3,
     content: <div />,
-    className: "md:col-span-2 col-span-1",
+    className: "md:col-span-2 col-span-2",
     thumbnail: Img,
   },
   {
