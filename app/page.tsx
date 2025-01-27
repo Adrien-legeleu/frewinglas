@@ -7,7 +7,7 @@ import Review from "./components/Landing/Review";
 
 export default function Home() {
   return (
-    <div className="space-y-10">
+    <div className="space-y-28">
       <LandingPage />
       <About />
       <Advantage />

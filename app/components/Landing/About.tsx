@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import ImgFrewinglas from "@/public/image/frewinglas.jpg";
+import ImgFrewinglas from "@/public/ASS_77_PD_m_aussen_Villa_Detail-01.jpg";
 import { motion } from "motion/react";
 export default function About() {
   return (
-    <div className="w-full h-full flex py-32 flex-col gap-10 px-10 items-center justify-center">
+    <div className="w-full h-full flex flex-col gap-10 px-10 items-center justify-center">
       <motion.h2
         initial={{ y: 40, opacity: 0 }}
         whileInView={{
@@ -22,7 +22,7 @@ export default function About() {
         alt="Frewinglas"
         width={500}
         height={500}
-        className="rounded-3xl md:w-2/3 w-full lg:h-[500px] h-[400px] object-cover shadow-xl"
+        className="rounded-3xl md:w-3/4 w-full lg:h-[500px] h-[400px] object-cover shadow-xl"
       />
     </div>
   );

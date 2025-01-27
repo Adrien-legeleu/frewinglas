@@ -1,11 +1,13 @@
 "use client";
 import Image from "next/image";
-import Img from "@/public/image/frewinglas.jpg";
+import Img1 from "@/public/advantage (1).png";
+import Img2 from "@/public/advantage (2).png";
+import Img3 from "@/public/advantage (3).png";
 import { motion } from "framer-motion";
 
 export default function Advantage() {
   return (
-    <div className="md:h-screen h-full w-full items-center sm:px-10 px-5 py-32 gap-5 justify-center flex flex-col">
+    <div className=" h-full w-full items-center sm:px-10 px-5 py-20  gap-5 justify-center flex flex-col">
       <h2 className="text-3xl tracking-wider text-center font-semibold">
         Avantages des Menuiseries Frewinglas
       </h2>
@@ -42,17 +44,17 @@ export default function Advantage() {
               className="md:space-y-5 max-sm:mb-5 max-md:grid max-md:grid-cols-2 max-[430px]:grid-cols-1 max-md:gap-10 max-[430px]:gap-2 items-center"
             >
               <Image
-                className="rounded-3xl max-md:order-2 max-[430px]:order-1"
+                className="rounded-3xl max-[430px]:px-10  max-md:order-2 max-[430px]:order-1"
                 src={advantage.src}
                 alt="Frewinglas"
                 width={500}
                 height={500}
               />
               <div className="space-y-2 max-[430px]:order-2">
-                <h3 className="text-base sm:text-lg md:text-xl">
+                <h3 className="text-base sm:text-lg md:text-xl max-[430px]:text-lg">
                   {advantage.title}
                 </h3>
-                <p className="tracking-wider sm:text-sm text-xs text-muted-foreground">
+                <p className="tracking-wider sm:text-sm text-xs text-muted-foreground max-[430px]:text-sm ">
                   {advantage.desc}
                 </p>
               </div>
@@ -68,16 +70,16 @@ const AdvantageList = [
   {
     title: "Isolation Optimale",
     desc: "Profitez d'une isolation thermique de qualité supérieure pour un confort inégalé toute l'année.",
-    src: Img,
+    src: Img2,
   },
   {
     title: "Design Personnalisé",
     desc: "Créez des espaces uniques avec nos menuiseries aluminium sur mesure, alliant style et fonctionnalité.",
-    src: Img,
+    src: Img3,
   },
   {
     title: "Sécurité Renforcée",
     desc: "Garantissez la sécurité de votre habitat avec nos solutions robustes et des caractéristiques avancées de protection.",
-    src: Img,
+    src: Img1,
   },
 ];

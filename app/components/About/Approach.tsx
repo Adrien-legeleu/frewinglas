@@ -11,7 +11,7 @@ export default function Approach() {
         Notre Approche Client
       </h2>
       <p className="max-w-xl text-center tracking-wide">
-        Nous nous engageons � accompagner nos clients dans la r�alisation de
+        Nous nous engageons à accompagner nos clients dans la réalisation de
         leurs projets en leur offrant des solutions sur mesure et un service
         haut de gamme.
       </p>
