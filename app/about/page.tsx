@@ -11,8 +11,9 @@ export default function Page() {
           À propos de Frewinglas
         </h1>
         <p className="text-muted-foreground text-lg text-center tracking-wider">
-          Découvrez l'excellence et l'innovation de la menuiserie en aluminium
-          avec des produits sur mesure fabriqués en France par Frewinglas.
+          Découvrez l&apos;excellence et l&apos;innovation de la menuiserie en
+          aluminium avec des produits sur mesure fabriqués en France par
+          Frewinglas.
         </p>
       </div>
       <AboutGrid />

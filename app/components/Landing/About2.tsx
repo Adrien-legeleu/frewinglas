@@ -26,9 +26,9 @@ export default function About2() {
         delay={0}
         className="tracking-wide text-muted-foreground sm:text-lg "
       >
-        Frewinglas incarne l'innovation et l'excellence dans la menuiserie
-        aluminium pour les professionnels en France, en proposant des designs
-        minimalistes particulièrement prisés par les architectes et les
+        Frewinglas incarne l&apos;innovation et l&apos;excellence dans la
+        menuiserie aluminium pour les professionnels en France, en proposant des
+        designs minimalistes particulièrement prisés par les architectes et les
         spécialistes du bâtiment.
       </TextAnimate>
 
@@ -38,8 +38,8 @@ export default function About2() {
         delay={3}
         className="tracking-wide text-muted-foreground sm:text-lg "
       >
-        Grâce à notre expertise, nous concrétisons des projets uniques, qu'ils
-        soient modestes ou ambitieux, tout en maintenant une qualité
+        Grâce à notre expertise, nous concrétisons des projets uniques,
+        qu&apos;ils soient modestes ou ambitieux, tout en maintenant une qualité
         irréprochable.
       </TextAnimate>
 

@@ -9,6 +9,17 @@ import Img6 from "@/public/image/products/AWS60BD.jpg";
 import Img7 from "@/public/image/products/aws_60_1_schnitt.jpg";
 import Img8 from "@/public/image/products/aws_75_bs.hi.jpg";
 
+interface ProductProps {
+  name: string;
+  description: string;
+  technicalFeatures: string;
+  design: string;
+  usage: string;
+  durability: string;
+  security: string;
+  summary: string;
+}
+
 export default function ProductsGrid() {
   const cards = data.map((card, index) => (
     <Card key={index} card={card} index={index} />
@@ -20,7 +31,7 @@ export default function ProductsGrid() {
     </div>
   );
 }
-const ProductDetails = ({ product }: any) => (
+const ProductDetails = ({ product }: { product: ProductProps }) => (
   <div className="p-5 border rounded-lg shadow-lg">
     <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
     <p className="mb-6 text-muted-foreground">{product.description}</p>

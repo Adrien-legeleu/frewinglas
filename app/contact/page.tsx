@@ -13,8 +13,8 @@ export default function page() {
             Contactez-nous
           </h1>
           <p className="text-muted-foreground text-lg text-center tracking-wider">
-            Vous avez une question ou une demande de devis ? N'hésitez pas à
-            nous contacter !
+            Vous avez une question ou une demande de devis ? N&apos;hésitez pas
+            à nous contacter !
           </p>
         </div>
         <ul className="flex flex-col  gap-5">

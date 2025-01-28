@@ -18,7 +18,10 @@ export default function Approach() {
       <div className="grid md:grid-cols-3  grid-cols-1 pt-10 gap-5 ">
         {ApproachList.map((item, index) => {
           return (
-            <div className="w-full bg-[#181e2b] shadow-[0px_0px_15px_rgba(0,0,0,0.09)] lg:p-10 p-5 rounded-3xl space-y-3 relative overflow-hidden">
+            <div
+              key={index}
+              className="w-full bg-[#181e2b] shadow-[0px_0px_15px_rgba(0,0,0,0.09)] lg:p-10 p-5 rounded-3xl space-y-3 relative overflow-hidden"
+            >
               <div className="w-24 h-24 bg-background brightness-[150%] rounded-full absolute -right-5 -top-7">
                 <p className="absolute bottom-6 left-7 text-white text-2xl">
                   0{index + 1}

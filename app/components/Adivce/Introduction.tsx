@@ -15,8 +15,9 @@ export default function Introduction() {
         viewport={{ amount: 0.5 }}
         className="text-muted-foreground text-lg text-center tracking-wider"
       >
-        Découvrez l'excellence et l'innovation de la menuiserie en aluminium
-        avec des produits sur mesure fabriqués en France par Frewinglas.
+        Découvrez l&apos;excellence et l&apos;innovation de la menuiserie en
+        aluminium avec des produits sur mesure fabriqués en France par
+        Frewinglas.
       </motion.p>
       <motion.p
         initial={{ y: 40, opacity: 0 }}

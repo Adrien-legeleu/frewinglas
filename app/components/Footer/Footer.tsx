@@ -42,7 +42,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Section */}
       <div className="mt-8 border-t border-muted pt-6 flex gap-8 items-center justify-center text-center text-sm text-muted-foreground">
         <p>
           &copy; {new Date().getFullYear()} Frewinglass. Tous droits réservés.
@@ -56,4 +55,3 @@ export default function Footer() {
     </div>
   );
 }
-``;
