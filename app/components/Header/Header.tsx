@@ -44,7 +44,7 @@ export default function Header() {
               <Link href={"/products"}>Produits</Link>
             </li>
             <li className="hover:text-primary cursor-pointer">
-              <Link href={"/blog"}>Blog</Link>
+              <Link href={"/advice"}>Conseils</Link>
             </li>
           </ul>
           <Link href={"/contact"}>

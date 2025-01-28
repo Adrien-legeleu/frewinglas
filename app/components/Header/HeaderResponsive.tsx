@@ -65,7 +65,7 @@ export default function HeaderResponsive() {
             className="hover:text-primary cursor-pointer"
             onClick={handleHeader}
           >
-            <Link href={"/blog"}>Blog</Link>
+            <Link href={"/advice"}>Conseils</Link>
           </li>
         </ul>
         <Link href={"/contact"} onClick={handleHeader}>
