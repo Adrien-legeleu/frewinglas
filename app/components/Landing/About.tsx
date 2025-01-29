@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import ImgFrewinglas from "@/public/ASS_77_PD_m_aussen_Villa_Detail-01.jpg";
+import ImgFrewinglas from "@/public/bg-fond.jpg";
 import { motion } from "motion/react";
 export default function About() {
   return (

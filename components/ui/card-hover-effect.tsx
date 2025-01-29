@@ -1,7 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -11,7 +10,8 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    link: string;
+
+    icon: JSX.Element;
   }[];
   className?: string;
 }) => {
@@ -25,9 +25,15 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
-        <Link
-          href={item?.link}
-          key={item?.link}
+        <motion.div
+          initial={{ y: 40, opacity: 0 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 0.5, ease: "easeInOut" },
+          }}
+          viewport={{ amount: 0.5 }}
+          key={idx}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -35,7 +41,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-background brightness-75 block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,10 +56,13 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+            <div className="flex items-center justify-between gap-2">
+              <CardTitle>{item.title}</CardTitle>
+              <div className="h-16 w-16">{item.icon}</div>
+            </div>
             <CardDescription>{item.description}</CardDescription>
           </Card>
-        </Link>
+        </motion.div>
       ))}
     </div>
   );
@@ -69,7 +78,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-background border brightness-90 border-transparent group-hover:border-neutral-200/10 relative z-20",
         className
       )}
     >

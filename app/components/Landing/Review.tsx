@@ -13,7 +13,7 @@ export default function Review() {
         {reviewList.map((review, index) => {
           return (
             <li key={index}>
-              <div className="flex flex-col gap-2 h-44 dark:text-white max-w-md w-full bg-[#181e2b] dark:bg-neutral-900 p-6 rounded-3xl shadow-md hover:scale-105 hover:duration-150 duration-150">
+              <div className="flex flex-col gap-2 h-44 dark:text-white max-w-md w-full bg-background brightness-[85%] p-6 rounded-3xl shadow-md hover:scale-105 hover:duration-150 duration-150">
                 <div className="flex flex-row justify-between w-full relative">
                   <div className="flex flex-row justify-between w-full">
                     <div>{review.name}</div>

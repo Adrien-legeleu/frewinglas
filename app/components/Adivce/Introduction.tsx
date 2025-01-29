@@ -4,35 +4,33 @@ import { motion } from "framer-motion";
 
 export default function Introduction() {
   return (
-    <div className="flex flex-col gap-10 max-w-xl mx-auto text-center items-center justify-center h-full">
+    <div className="flex flex-col gap-8 max-w-2xl mx-auto text-center items-center justify-center h-full px-5">
       <motion.p
         initial={{ y: 40, opacity: 0 }}
         whileInView={{
           y: 0,
           opacity: 1,
-          transition: { duration: 0.5, ease: "easeInOut" },
+          transition: { duration: 0.6, ease: "easeInOut" },
         }}
         viewport={{ amount: 0.5 }}
-        className="text-muted-foreground text-lg text-center tracking-wider"
+        className="text-muted-foreground text-xl font-medium text-center tracking-wider leading-relaxed"
       >
-        Découvrez l&apos;excellence et l&apos;innovation de la menuiserie en
-        aluminium avec des produits sur mesure fabriqués en France par
-        Frewinglas.
+        Optimisez l'efficacité énergétique et la durabilité de vos fenêtres et
+        portes avec des solutions de menuiserie en aluminium sur mesure.
       </motion.p>
+
       <motion.p
         initial={{ y: 40, opacity: 0 }}
         whileInView={{
           y: 0,
           opacity: 1,
-          transition: { duration: 0.5, ease: "easeInOut" },
+          transition: { duration: 0.6, ease: "easeInOut" },
         }}
         viewport={{ amount: 0.5 }}
-        className="text-muted-foreground text-lg text-center tracking-wider"
+        className="text-muted-foreground text-xl font-medium text-center tracking-wider leading-relaxed"
       >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque id ex
-        quis quaerat, voluptate distinctio cumque laudantium! Dolorem et,
-        officia itaque omnis ipsum repellat fugit quae minus reprehenderit
-        perspiciatis quod laborum praesentium.
+        Découvrez nos conseils et astuces pour améliorer la performance de vos
+        installations tout en réduisant vos dépenses énergétiques.
       </motion.p>
     </div>
   );

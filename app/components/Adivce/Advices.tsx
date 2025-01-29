@@ -1,47 +1,61 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-
+import {
+  IconRecycle,
+  IconBrush,
+  IconSun,
+  IconShieldCheck,
+  IconPalette,
+  IconTrendingUp,
+} from "@tabler/icons-react";
 export default function Advices() {
   return (
     <div className="max-w-5xl mx-auto px-8">
-      <HoverEffect items={projects} />
+      <HoverEffect items={advices} />
     </div>
   );
 }
-export const projects = [
+
+export const advices = [
   {
-    title: "Stripe",
+    title: "L'aluminium : 100% recyclable",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "Saviez-vous que l'aluminium est entièrement recyclable sans perte de qualité ? Un choix écologique pour vos menuiseries.",
+
+    icon: <IconRecycle className="h-full w-full text-muted-foreground " />,
   },
   {
-    title: "Netflix",
+    title: "Entretien minimal",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Un simple nettoyage annuel avec de l'eau savonneuse suffit pour maintenir l'éclat de vos fenêtres en aluminium.",
+
+    icon: <IconBrush className="w-full h-full p-1 text-muted-foreground" />,
   },
   {
-    title: "Google",
+    title: "Profils fins pour plus de lumière",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Les profils en aluminium permettent d'augmenter la surface vitrée, apportant jusqu'à 20% de luminosité supplémentaire.",
+
+    icon: <IconSun className="h-full w-full text-muted-foreground" />,
   },
   {
-    title: "Meta",
+    title: "Durabilité exceptionnelle",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "Les fenêtres en aluminium résistent aux intempéries et à la corrosion, assurant une longue durée de vie.",
+
+    icon: <IconShieldCheck className="h-full w-full text-muted-foreground" />,
   },
   {
-    title: "Amazon",
+    title: "Personnalisation infinie",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "Avec une vaste gamme de couleurs et de finitions, l'aluminium s'adapte à tous les styles architecturaux.",
+
+    icon: <IconPalette className="h-full w-full text-muted-foreground" />,
   },
   {
-    title: "Microsoft",
+    title: "Investissement rentable",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Bien que l'aluminium puisse être plus coûteux à l'achat, sa durabilité et sa faible maintenance en font un investissement judicieux à long terme.",
+
+    icon: <IconTrendingUp className="h-full w-full text-muted-foreground" />,
   },
 ];

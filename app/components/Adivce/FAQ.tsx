@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
@@ -7,51 +9,70 @@ import {
 
 const faqData = [
   {
-    question: "Quest-ce qu'Ikovaline ?",
+    question: "Quels sont les avantages des menuiseries en aluminium ?",
     answer:
-      "Ikovaline est une start-up spécialisée dans le marketing digital et la transformation numérique. Nous aidons les entreprises à améliorer leur visibilité en ligne, à optimiser leur présence sur Google My Business, à gérer les avis clients, et à développer des solutions adaptées pour booster leur croissance.",
+      "L'aluminium est léger, durable et ne rouille pas. Il permet de créer des structures fines et élégantes tout en nécessitant peu d’entretien.",
   },
   {
-    question: "Comment Ikovaline peut-elle aider mon entreprise ?",
+    question: "Comment entretenir ses fenêtres et portes en aluminium ?",
     answer:
-      "Nous offrons des services personnalisés pour accompagner votre entreprise dans sa digitalisation. Cela inclut l'optimisation de votre site web, la gestion de vos campagnes publicitaires, le SEO, la gestion de vos réseaux sociaux, et bien plus. Notre objectif est de vous aider à augmenter votre visibilité et à atteindre vos objectifs commerciaux.",
+      "Un simple nettoyage à l’eau savonneuse suffit. Il est recommandé d’éviter les produits abrasifs pour préserver la finition.",
+  },
+  {
+    question: "L’aluminium est-il un bon isolant thermique ?",
+    answer:
+      "Seul, l'aluminium conduit la chaleur, mais avec une rupture de pont thermique et un bon vitrage, il offre une excellente isolation.",
+  },
+  {
+    question: "Peut-on personnaliser la couleur des menuiseries en aluminium ?",
+    answer:
+      "Oui, grâce au thermolaquage, l’aluminium est disponible dans une large gamme de couleurs et finitions (mat, brillant, texturé, imitation bois).",
+  },
+  {
+    question: "L’aluminium est-il plus résistant que le PVC ?",
+    answer:
+      "L’aluminium est plus robuste et durable, permettant des fenêtres plus grandes et plus fines, tout en étant 100% recyclable.",
+  },
+  {
+    question: "Comment renforcer la sécurité des ouvertures en aluminium ?",
+    answer:
+      "L’ajout de vitrages feuilletés, de serrures multipoints et de renforts spécifiques permet d’améliorer la sécurité.",
   },
   {
     question:
-      "Quels résultats puis-je attendre en travaillant avec Ikovaline ?",
+      "Les menuiseries en aluminium sont-elles adaptées aux maisons passives ?",
     answer:
-      "En travaillant avec Ikovaline, vous pouvez espérer une amélioration significative de votre visibilité en ligne, un accroissement du trafic sur votre site, une gestion efficace de votre e-réputation, et une augmentation de votre chiffre d'affaires grâce à une stratégie digitale bien ciblée.En fonction des profils, nous garantissons une croissance comprise entre 15% et 70%.",
-  },
-  {
-    question: "Quels types d'entreprises pouvez-vous aider ?",
-    answer:
-      "Nous travaillons avec des entreprises de toutes tailles et de divers secteurs d’activité. Que vous soyez une PME, une start-up ou une grande entreprise, nous adaptons nos services à vos besoins spécifiques pour vous aider à réussir dans votre transformation numérique.",
-  },
-  {
-    question: "Quels services proposez-vous exactement ?",
-    answer:
-      "Nous proposons une gamme complète de services digitaux, incluant :\n- Optimisation de la présence sur Google My Business\n- Stratégies SEO et SEM\n- Gestion des réseaux sociaux (Instagram, Facebook, LinkedIn, TikTok)\n- Création et optimisation de sites web (vitrine et e-commerce)\n- Lancement et gestion de campagnes publicitaires (Google Ads, Social Ads)\n- Consulting en développement commercial et stratégie",
-  },
-  {
-    question: "Comment débuter avec Ikovaline ?",
-    answer:
-      "Commencez par prendre contact avec nous via notre page 'Contact'. Nous discuterons de vos objectifs et déterminerons ensemble la meilleure stratégie pour propulser votre entreprise vers le succès.",
+      "Oui, certains modèles sont conçus pour répondre aux normes des maisons passives, garantissant une isolation thermique optimale.",
   },
 ];
 
 export default function FAQ() {
   return (
-    <div className="max-w-5xl  py-20 space-y-12 mx-auto px-5">
+    <div className="max-w-5xl py-20 space-y-12 mx-auto px-5">
       <Accordion type="single" className="gap-2 flex flex-col" collapsible>
         {faqData.map((faq, index) => (
-          <AccordionItem
-            value={`item-${index + 1}`}
+          <motion.div
             key={index}
-            className="bg-[#5ad9f230] p-2 dark:bg-[#141c25]"
+            initial={{ y: 40, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.5, ease: "easeInOut" },
+            }}
+            viewport={{ amount: 0.5 }}
           >
-            <AccordionTrigger className="py-4">{faq.question}</AccordionTrigger>
-            <AccordionContent>{faq.answer}</AccordionContent>
-          </AccordionItem>
+            <AccordionItem
+              value={`item-${index + 1}`}
+              className="bg-background brightness-90 py-2 px-4 shadow-2xl shadow-[#ffffff15] "
+            >
+              <AccordionTrigger className="py-4 ">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          </motion.div>
         ))}
       </Accordion>
     </div>

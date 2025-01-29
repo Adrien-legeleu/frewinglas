@@ -51,6 +51,16 @@ export default function Footer() {
             Mentions légales
           </Link>
         </p>
+        <p className="text-sm text-muted-foreground">
+          Par{" "}
+          <a
+            href="https://ikovaline.com"
+            target="_blank"
+            className="hover:text-primary font-semibold"
+          >
+            Ikovaline
+          </a>
+        </p>
       </div>
     </div>
   );
