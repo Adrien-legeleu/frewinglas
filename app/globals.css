@@ -125,10 +125,7 @@ body {
 
 .image-mask-container {
   position: relative;
-  width: 600px;
-  /* Adapte à la taille de tes images */
-  height: 600px;
-  /* Assure-toi que la taille est la même pour les deux images */
+ 
 }
 
 .base-image {

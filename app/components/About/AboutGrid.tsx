@@ -23,7 +23,7 @@ const content = [
 
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <div className="relative w-full h-full image-mask-container">
+        <div className="relative  image-mask-container md:w-|600px] w-96  md:h-|600px] h-96">
           <Image
             src={Img}
             width={500}
@@ -49,7 +49,7 @@ const content = [
     ),
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <div className="relative w-full h-full image-mask-container">
+        <div className="relative  image-mask-container md:w-|600px] w-96  md:h-|600px] h-96">
           <Image
             src={Img3}
             width={500}
@@ -88,7 +88,7 @@ const content = [
 
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <div className="relative w-full h-full image-mask-container">
+        <div className="relative  image-mask-container md:w-|600px] w-96  md:h-|600px] h-96">
           <Image
             src={Img2}
             width={500}

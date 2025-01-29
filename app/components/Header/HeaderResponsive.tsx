@@ -17,19 +17,19 @@ export default function HeaderResponsive() {
         onClick={handleHeader}
       >
         <div
-          className={`rounded-2xl h-[4px] w-1/2 bg-primary duration-500 transform ${
+          className={`rounded-2xl h-[4px] shadow-lg w-1/2 bg-primary duration-500 transform ${
             isOpen
               ? "rotate-[225deg] origin-right -translate-x-[12px] -translate-y-[1px]"
               : ""
           }`}
         ></div>
         <div
-          className={`rounded-2xl h-[4px] w-full bg-primary duration-500 ${
+          className={`rounded-2xl h-[4px] shadow-lg w-full bg-primary duration-500 ${
             isOpen ? "-rotate-45" : ""
           }`}
         ></div>
         <div
-          className={`rounded-2xl h-[4px] w-1/2 bg-primary duration-500 place-self-end transform ${
+          className={`rounded-2xl h-[4px] shadow-2xl w-1/2 bg-primary duration-500 place-self-end transform ${
             isOpen
               ? "rotate-[225deg] origin-left translate-x-[12px] translate-y-[1px]"
               : ""

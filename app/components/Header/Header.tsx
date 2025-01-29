@@ -34,7 +34,7 @@ export default function Header() {
             </div>
           </Link>
           <ul className="flex gap-5 items-center justify-center whitespace-nowrap">
-            <li className="hover:text-primary cursor-pointer">
+            <li className="hover:text-primary shadow-lg cursor-pointer">
               <Link href={"/"}>Home</Link>
             </li>
             <li className="hover:text-primary cursor-pointer">

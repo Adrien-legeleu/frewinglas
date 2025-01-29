@@ -57,19 +57,7 @@ export default function About2() {
           <IconCircleCheckFilled className="text-[#ACD634]" />
           Isolation Thermique de Pointe
         </motion.li>
-        <motion.li
-          initial={{ y: 40, opacity: 0 }}
-          whileInView={{
-            y: 0,
-            opacity: 1,
-            transition: { duration: 0.5, ease: "easeInOut" },
-          }}
-          viewport={{ amount: 0.5 }}
-          className="flex items-center gap-2"
-        >
-          <IconCircleCheckFilled className="text-[#ACD634]" />
-          Design Minimaliste Apprécié par les Architectes
-        </motion.li>
+
         <motion.li
           initial={{ y: 40, opacity: 0 }}
           whileInView={{
@@ -82,6 +70,19 @@ export default function About2() {
         >
           <IconCircleCheckFilled className="text-[#ACD634]" />
           Sécurité Optimale et Personnalisée
+        </motion.li>
+        <motion.li
+          initial={{ y: 40, opacity: 0 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 0.5, ease: "easeInOut" },
+          }}
+          viewport={{ amount: 0.5 }}
+          className="flex items-center gap-2"
+        >
+          <IconCircleCheckFilled className="text-[#ACD634]" />
+          Design Minimaliste Apprécié
         </motion.li>
       </ul>
       <Button className="p-5 rounded-2xl mt-5">
