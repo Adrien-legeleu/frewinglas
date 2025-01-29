@@ -23,7 +23,7 @@ const content = [
 
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <div className="relative  image-mask-container md:w-[550px] w-96  md:h-[550px] sm:h-96 h-80">
+        <div className="relative right-4  image-mask-container h-full w-full">
           <Image
             src={Img}
             width={800}
@@ -49,7 +49,7 @@ const content = [
     ),
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <div className="relative  image-mask-container md:w-[550px] w-96  md:h-[550px] sm:h-96 h-80">
+        <div className="relative  image-mask-container w-full h-full">
           <Image
             src={Img3}
             width={500}
@@ -88,13 +88,13 @@ const content = [
 
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <div className="relative  image-mask-container md:w-[550px] w-96  md:h-[550px] sm:h-96 h-80">
+        <div className=" image-mask-container w-full ">
           <Image
             src={Img2}
             width={500}
             height={500}
             alt="Base Image"
-            className="base-image-3"
+            className="base-image-3 w-full"
           />
         </div>
       </div>
@@ -107,9 +107,9 @@ export default function AboutGrid() {
     <ul className="px-10 space-y-16 ">
       {content.map((item, index) => (
         <li key={index}>
-          <div className="grid  md:grid-cols-2 grid-cols-1 max-sm:text-center items-center md:gap-10 gap-5">
+          <div className="grid  md:grid-cols-2 grid-cols-1 max-sm:text-center items-center md:gap-10 sm:gap-5 gap-2">
             <div
-              className={`${index % 2 === 0 ? "order-1" : "md:order-2"} space-y-8`}
+              className={`${index % 2 === 0 ? "md:order-1 order-2" : "order-2"} space-y-8`}
             >
               <h1 className="md:text-3xl text-2xl font-bold">{item.title}</h1>
               <div className="leading-loose  text-sm md:text-base">
@@ -117,7 +117,7 @@ export default function AboutGrid() {
               </div>
             </div>
             <div
-              className={`${index % 2 === 0 ? "order-2" : "md:order-1"} relative`}
+              className={`${index % 2 === 0 ? "md:order-2 order-1" : "order-1"} relative`}
             >
               {item.content}
             </div>

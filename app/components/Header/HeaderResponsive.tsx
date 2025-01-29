@@ -38,8 +38,8 @@ export default function HeaderResponsive() {
       </div>
 
       <div
-        className={`fixed top-0 left-0 h-screen w-full flex-col z-[99] bg-background items-center justify-center gap-10 ${
-          isOpen ? "flex" : "hidden"
+        className={`fixed top-0 left-0 h-screen w-full flex-col z-[99] bg-background items-center duration-300 ease-in-out flex justify-center gap-10 ${
+          isOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
         <ul className="flex flex-col gap-5 text-lg tracking-wider font-semibold items-center justify-center">

@@ -6,7 +6,7 @@ import {
 
 export default function Approach() {
   return (
-    <div className="md:h-screen h-full px-10 items-center justify-center flex flex-col gap-5 py-32">
+    <div className="lg:h-screen h-full px-10 items-center justify-center flex flex-col gap-5 ">
       <h2 className="text-3xl  tracking-wider font-semibold text-center">
         Notre Approche Client
       </h2>

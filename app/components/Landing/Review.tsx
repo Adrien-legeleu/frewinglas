@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Img from "@/public/logo/logo-frewinglas.png";
+import Img1 from "@/public/image/team-florent-profil.jpg";
 import { ReviewResponsive } from "./ReviewResponsive";
 
 export default function Review() {
@@ -17,13 +18,26 @@ export default function Review() {
                 <div className="flex flex-row justify-between w-full relative">
                   <div className="flex flex-row justify-between w-full">
                     <div>{review.name}</div>
-                    <Image
-                      src={review.image}
-                      alt="frewinglas"
-                      width={30}
-                      height={30}
-                      className="h-10 absolute top-0 right-0 w-10 rounded-full"
-                    />
+                    {review.image ? (
+                      <Image
+                        src={review.image}
+                        alt="frewinglas"
+                        width={30}
+                        height={30}
+                        className="h-10 absolute top-0 right-0 w-10 rounded-full"
+                      />
+                    ) : (
+                      <div
+                        className="h-10 absolute top-0 right-0 w-10 rounded-full"
+                        style={{
+                          background: `linear-gradient(135deg, #${Math.floor(
+                            Math.random() * 16777215
+                          ).toString(
+                            16
+                          )}, #${Math.floor(Math.random() * 16777215).toString(16)})`,
+                        }}
+                      ></div>
+                    )}
                   </div>
                 </div>
                 <div className="flex flex-row justify-between w-full">
@@ -59,18 +73,18 @@ const reviewList = [
     name: "Florent Ghizzoni - Ikovaline",
     review:
       "Entreprise sérieuse, avec des produits de qualité. Je recommande vivement.",
-    image: Img,
+    image: Img1,
   },
   {
     name: "Julie Duboi",
     review:
       "Les solutions de Frewinglas offrent un équilibre parfait entre design et fonctionnalité. Une excellente expérience !",
-    image: Img,
+    image: null,
   },
   {
     name: "Marc Leroy",
     review:
       "Le service client est impeccable et les produits sont d'une qualité exceptionnelle.",
-    image: Img,
+    image: null,
   },
 ];

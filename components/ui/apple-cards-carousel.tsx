@@ -94,7 +94,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className=" rounded-3xl"
+                className=" rounded-3xl h-full"
               >
                 {item}
               </motion.div>
@@ -151,7 +151,7 @@ export const Card = ({
     <>
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 h-screen z-[10000] overflow-auto">
+          <div className="fixed inset-0 w-full h-screen z-[10000] overflow-auto">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -164,7 +164,7 @@ export const Card = ({
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               ref={containerRef}
-              className="max-w-4xl mx-auto bg-background space-y-5 h-fit  z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
+              className="max-w-4xl mx-auto bg-background space-y-5 h-fit w-full z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
             >
               {" "}
               <button
@@ -194,7 +194,7 @@ export const Card = ({
       <motion.div
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="rounded-3xl bg-secondary p-5 dark:bg-neutral-900 overflow-hidden flex flex-col items-center justify-center relative z-10"
+        className="rounded-3xl bg-secondary h-full cursor-pointer p-5 dark:bg-neutral-900 overflow-hidden flex flex-col  justify-start relative z-10"
       >
         <BlurImage
           src={card.src}
@@ -203,7 +203,7 @@ export const Card = ({
         />
 
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-secondary/50 via-transparent to-transparent z-30 pointer-events-none" />
-        <div className="relative z-40 p-8">
+        <div className="relative z-40 space-y-4 py-8 px-2">
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
             className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"

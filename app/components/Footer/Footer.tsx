@@ -5,7 +5,7 @@ import Logo from "@/public/logo-removebg-preview.png";
 
 export default function Footer() {
   return (
-    <div className="bg-background text-foreground p-10  max-w-[1400px] mx-auto">
+    <div className="bg-background text-foreground p-10 pt-32 max-w-[1400px] mx-auto">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-10">
         <div className="flex flex-col items-center lg:items-start gap-4">
           <Image
@@ -42,16 +42,16 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-8 border-t border-muted pt-6 flex gap-8 items-center justify-center text-center text-sm text-muted-foreground">
+      <div className="mt-8 border-t border-muted pt-6 flex gap-8 items-center justify-center text-center sm:text-sm text-xs text-muted-foreground">
         <p>
           &copy; {new Date().getFullYear()} Frewinglass. Tous droits réservés.
         </p>
-        <p className="text-sm text-muted-foreground">
+        <p className=" text-muted-foreground">
           <Link href="/mentions-legales" className="hover:text-primary">
             Mentions légales
           </Link>
         </p>
-        <p className="text-sm text-muted-foreground">
+        <p className=" text-muted-foreground">
           Par{" "}
           <a
             href="https://ikovaline.com"

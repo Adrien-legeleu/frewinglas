@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function LandingPage() {
   return (
-    <div className="sm:h-screen h-[80vh] w-full px-10 items-center md:pt-32 pt-16 md:pb-32 pb-16 gap-20 flex flex-col bg-cover md:justify-center justify-between  from-black via-gray-700 to-white bg-[url(/bg-fond-mobile.jpg)] sm:bg-[url(/bg-fond.jpg)] sm:bg-center bg-left relative">
+    <div className="sm:h-screen h-[90vh] w-full px-10 items-center md:pt-32 pt-16 md:pb-32 pb-16 gap-20 flex flex-col bg-cover md:justify-center justify-between  from-black via-gray-700 to-white bg-[url(/bg-fond-mobile.jpg)] sm:bg-[url(/bg-fond.jpg)] sm:bg-center bg-left relative">
       <div
         className="absolute inset-0 opacity-70"
         style={{

@@ -26,17 +26,17 @@ export default function ProductsGrid() {
   ));
 
   return (
-    <div className="w-full h-full  px-10">
+    <div className="w-full h-full  sm:px-10 px-5">
       <Carousel items={cards} />
     </div>
   );
 }
 const ProductDetails = ({ product }: { product: ProductProps }) => (
   <div className="p-5 border rounded-lg shadow-lg">
-    <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
-    <p className="mb-6 text-muted-foreground">{product.description}</p>
+    <h2 className="text-2xl font-bold mb-6">{product.name}</h2>
+    <p className="mb-8 text-muted-foreground">{product.description}</p>
 
-    <div className="mb-6 space-y-4">
+    <div className="mb-8 space-y-4">
       <h3 className="text-xl font-semibold">Caractéristiques techniques</h3>
       <ul className="list-disc list-inside text-muted-foreground">
         {product.technicalFeatures
@@ -48,7 +48,7 @@ const ProductDetails = ({ product }: { product: ProductProps }) => (
       </ul>
     </div>
 
-    <div className="mb-6 space-y-4">
+    <div className="mb-8 space-y-4">
       <h3 className="text-xl font-semibold">Design</h3>
       <ul className="list-disc list-inside text-muted-foreground">
         {product.design
@@ -60,7 +60,7 @@ const ProductDetails = ({ product }: { product: ProductProps }) => (
       </ul>
     </div>
 
-    <div className="mb-6 space-y-4">
+    <div className="mb-8 space-y-4">
       <h3 className="text-xl font-semibold">Utilisation</h3>
       <ul className="list-disc list-inside text-muted-foreground">
         {product.usage
@@ -72,7 +72,7 @@ const ProductDetails = ({ product }: { product: ProductProps }) => (
       </ul>
     </div>
 
-    <div className="mb-6 space-y-4">
+    <div className="mb-8 space-y-4">
       <h3 className="text-xl font-semibold">Durabilité</h3>
       <ul className="list-disc list-inside text-muted-foreground">
         {product.durability
@@ -84,7 +84,7 @@ const ProductDetails = ({ product }: { product: ProductProps }) => (
       </ul>
     </div>
 
-    <div className="mb-6 space-y-4">
+    <div className="mb-8 space-y-4">
       <h3 className="text-xl font-semibold">Sécurité</h3>
       <ul className="list-disc list-inside text-muted-foreground">
         {product.security

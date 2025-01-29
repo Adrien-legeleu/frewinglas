@@ -49,6 +49,18 @@ const faqData = [
 export default function FAQ() {
   return (
     <div className="max-w-5xl py-20 space-y-12 mx-auto px-5">
+      <motion.h2
+        initial={{ y: 40, opacity: 0 }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+          transition: { duration: 0.5, ease: "easeInOut" },
+        }}
+        viewport={{ amount: 0.5 }}
+        className="max-w-xl font-semibold text-3xl tracking-wider text-center"
+      >
+        Vous vous posez des questions ?
+      </motion.h2>
       <Accordion type="single" className="gap-2 flex flex-col" collapsible>
         {faqData.map((faq, index) => (
           <motion.div
