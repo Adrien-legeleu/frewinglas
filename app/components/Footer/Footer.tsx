@@ -5,7 +5,7 @@ import Logo from "@/public/logo-removebg-preview.png";
 
 export default function Footer() {
   return (
-    <div className="bg-background text-foreground p-10">
+    <div className="bg-background text-foreground p-10  max-w-[1400px] mx-auto">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-10">
         <div className="flex flex-col items-center lg:items-start gap-4">
           <Image

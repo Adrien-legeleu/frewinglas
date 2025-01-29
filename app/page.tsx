@@ -7,13 +7,15 @@ import Review from "./components/Landing/Review";
 
 export default function Home() {
   return (
-    <div className="space-y-28">
+    <div className="space-y-32  ">
       <LandingPage />
-      <About />
-      <Advantage />
-      <About2 />
-      <Review />
-      <Portfolio />
+      <div className=" max-w-[1400px] mx-auto space-y-32">
+        <About />
+        <Advantage />
+        <About2 />
+        <Review />
+        <Portfolio />
+      </div>
     </div>
   );
 }

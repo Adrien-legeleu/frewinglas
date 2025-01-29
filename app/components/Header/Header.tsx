@@ -20,7 +20,7 @@ export default function Header() {
       {isResponsive ? (
         <HeaderResponsive />
       ) : (
-        <div className="fixed top-2 w-auto left-1/2  z-[100] bg-background rounded-3xl -translate-x-1/2 gap-28 flex items-center justify-between p-5">
+        <div className="fixed top-2 w-auto left-1/2  max-w-[1400px] mx-auto  z-[100] bg-background rounded-3xl -translate-x-1/2 gap-28 flex items-center justify-between p-5">
           <Link href={"/"} className="cursor-pointer">
             <div className="flex items-center gap-2">
               <Image
@@ -34,7 +34,7 @@ export default function Header() {
             </div>
           </Link>
           <ul className="flex gap-5 items-center justify-center whitespace-nowrap">
-            <li className="hover:text-primary shadow-lg cursor-pointer">
+            <li className="hover:text-primary  cursor-pointer">
               <Link href={"/"}>Home</Link>
             </li>
             <li className="hover:text-primary cursor-pointer">

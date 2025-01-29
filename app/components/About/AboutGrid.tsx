@@ -23,11 +23,11 @@ const content = [
 
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <div className="relative  image-mask-container md:w-|600px] w-96  md:h-|600px] sm:h-96 h-80">
+        <div className="relative  image-mask-container md:w-[550px] w-96  md:h-[550px] sm:h-96 h-80">
           <Image
             src={Img}
-            width={500}
-            height={500}
+            width={800}
+            height={800}
             alt="Base Image"
             className="base-image"
           />
@@ -49,7 +49,7 @@ const content = [
     ),
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <div className="relative  image-mask-container md:w-|600px] w-96  md:h-|600px] sm:h-96 h-80">
+        <div className="relative  image-mask-container md:w-[550px] w-96  md:h-[550px] sm:h-96 h-80">
           <Image
             src={Img3}
             width={500}
@@ -88,7 +88,7 @@ const content = [
 
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <div className="relative  image-mask-container md:w-|600px] w-96  md:h-|600px] sm:h-96 h-80">
+        <div className="relative  image-mask-container md:w-[550px] w-96  md:h-[550px] sm:h-96 h-80">
           <Image
             src={Img2}
             width={500}
@@ -112,9 +112,9 @@ export default function AboutGrid() {
               className={`${index % 2 === 0 ? "order-1" : "md:order-2"} space-y-8`}
             >
               <h1 className="md:text-3xl text-2xl font-bold">{item.title}</h1>
-              <p className="leading-loose  text-sm md:text-base">
+              <div className="leading-loose  text-sm md:text-base">
                 {item.description}
-              </p>
+              </div>
             </div>
             <div
               className={`${index % 2 === 0 ? "order-2" : "md:order-1"} relative`}
