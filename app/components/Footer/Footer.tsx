@@ -13,7 +13,7 @@ export default function Footer() {
             alt="Logo Frewinglass"
             width={500}
             height={500}
-            className="rounded-lg w-56"
+            className="rounded-lg w-40"
           />
           <p className="text-sm text-muted-foreground text-center lg:text-left">
             Frewinglass, spécialiste en solutions modernes et durables pour vos
