@@ -3,13 +3,13 @@ import ProductsGrid from "../components/Products/ProductsGrid";
 export default function page() {
   return (
     <div className="space-y-32">
-      <div className="flex items-center h-[50vh] max-w-4xl mx-auto space-y-5 [868px]:justify-end justify-center px-10 flex-col">
+      <div className="flex items-center  max-w-4xl mx-auto space-y-5 md:pt-32 pt-16 pb-10 px-10 flex-col">
         <h1 className="text-4xl text-center font-semibold tracking-wider">
-          Découvrez nos produits !
+          Explorez notre sélection de produits !
         </h1>
         <p className="text-muted-foreground text-lg text-center tracking-wider">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quo in
-          aliquid eligendi, provident sequi.
+          Découvrez des produits soigneusement sélectionnés pour répondre à vos
+          besoins. Qualité, innovation et performance sont au rendez-vous.
         </p>
       </div>
       <ProductsGrid />

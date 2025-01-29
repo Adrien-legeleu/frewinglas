@@ -2,15 +2,15 @@ import { Button } from "@/components/ui/button";
 
 export default function LandingPage() {
   return (
-    <div className="h-screen w-full px-10 items-center justify-center gap-10 flex flex-col bg-cover  from-black via-gray-700 to-white bg-[url(/bg-fond-mobile.jpg)] sm:bg-[url(/bg-fond.jpg)] sm:bg-center bg-left relative">
+    <div className="h-screen w-full px-10 items-center pt-32 gap-10 flex flex-col bg-cover  from-black via-gray-700 to-white bg-[url(/bg-fond-mobile.jpg)] sm:bg-[url(/bg-fond.jpg)] sm:bg-center bg-left relative">
       <div
         className="absolute inset-0 opacity-70"
         style={{
           background:
-            "radial-gradient(circle, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0) 80%)",
+            "radial-gradient(circle, rgba(0, 0, 0, 0.55) 20%, rgba(0, 0, 0, 0) 80%)",
         }}
       />
-      <h1 className="sm:text-6xl text-5xl z-10 text-shadow text-[#ffffee] font-semibold">
+      <h1 className="md:text-6xl text-5xl z-10  text-[#ffffee] font-semibold">
         Frewinglas
       </h1>
       <p className="md:text-2xl text-xl sm:text-lg [430px]:text-base z-10 text-white  font-semibold max-w-3xl leading-relaxed text-center">

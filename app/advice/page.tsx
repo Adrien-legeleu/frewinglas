@@ -5,7 +5,7 @@ import FAQ from "../components/Adivce/FAQ";
 
 export default function page() {
   return (
-    <div>
+    <div className="space-y-32">
       <Introduction />
       <Advices />
       <FAQ />

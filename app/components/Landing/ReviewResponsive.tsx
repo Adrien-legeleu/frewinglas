@@ -2,7 +2,7 @@
 
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import React from "react";
-import Img from "@/public/image/frewinglas.jpg";
+import Img from "@/public/logo/logo-frewinglas.png";
 
 export function ReviewResponsive() {
   return (

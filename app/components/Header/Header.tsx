@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Img from "@/public/image/frewinglas.jpg";
+import Img from "@/public/logo/logo-frewinglas.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useEffect, useState } from "react";

@@ -1,8 +1,8 @@
 "use client";
 import { LayoutGrid } from "@/components/ui/layout-grid";
-import Img1 from "@/public/image/frewinglas.jpg";
+import Img1 from "@/public/frewinglas-img2.jpg";
 import Img2 from "@/public/3136a51.jpg";
-import Img3 from "@/public/bg-fond.jpg";
+import Img3 from "@/public/frewinglas-img3.jpg";
 import Img4 from "@/public/IMG_1042.png";
 import Img5 from "@/public//breton.jpg";
 import Img6 from "@/public/IMG_1047.png";

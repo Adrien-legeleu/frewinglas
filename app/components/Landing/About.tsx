@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import ImgFrewinglas from "@/public/bg-fond.jpg";
+import ImgFrewinglas from "@/public/frewinglas-img.jpg";
 import { motion } from "motion/react";
 export default function About() {
   return (
@@ -20,8 +20,8 @@ export default function About() {
       <Image
         src={ImgFrewinglas}
         alt="Frewinglas"
-        width={500}
-        height={500}
+        width={800}
+        height={800}
         className="rounded-3xl md:w-3/4 w-full lg:h-[500px] h-[400px] object-cover shadow-xl"
       />
     </div>

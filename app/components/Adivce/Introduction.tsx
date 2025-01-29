@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Introduction() {
   return (
-    <div className="flex flex-col h-full gap-8 max-w-2xl mx-auto text-center items-center justify-center  px-5">
+    <div className="flex flex-col h-full gap-8 max-w-2xl mx-auto text-center items-center md:pt-32 pt-16 px-5">
       <h1 className="text-4xl text-center font-semibold tracking-wider">
         À propos de Frewinglas
       </h1>

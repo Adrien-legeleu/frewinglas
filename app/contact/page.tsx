@@ -31,8 +31,15 @@ export default function page() {
           <li className="bg-background p-5 flex items-center justify-center gap-4 flex-col rounded-3xl">
             <h3>Suivez-nous :</h3>
             <div className="flex gap-2">
-              <IconBrandFacebookFilled className="text-muted-foreground" />
-              <IconBrandLinkedinFilled className="text-muted-foreground" />
+              <a
+                href="https://www.linkedin.com/company/frewinglas/"
+                target="_blank"
+              >
+                <IconBrandFacebookFilled className="text-muted-foreground" />
+              </a>
+              <a href="https://www.facebook.com/frewinglas" target="_blank">
+                <IconBrandLinkedinFilled className="text-muted-foreground" />
+              </a>
             </div>
           </li>
         </ul>
