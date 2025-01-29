@@ -8,7 +8,7 @@ import Review from "./components/Landing/Review";
 export default function Home() {
   return (
     <div className="space-y-28">
-      {/* <LandingPage /> */}
+      <LandingPage />
       <About />
       <Advantage />
       <About2 />

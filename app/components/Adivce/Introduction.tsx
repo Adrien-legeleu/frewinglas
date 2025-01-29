@@ -15,8 +15,8 @@ export default function Introduction() {
         viewport={{ amount: 0.5 }}
         className="text-muted-foreground text-xl font-medium text-center tracking-wider leading-relaxed"
       >
-        Optimisez l'efficacité énergétique et la durabilité de vos fenêtres et
-        portes avec des solutions de menuiserie en aluminium sur mesure.
+        Optimisez l&apos;efficacité énergétique et la durabilité de vos fenêtres
+        et portes avec des solutions de menuiserie en aluminium sur mesure.
       </motion.p>
 
       <motion.p
