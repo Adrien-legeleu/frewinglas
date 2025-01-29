@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Img from "@/public/logo/logo-frewinglas.png";
 import Img1 from "@/public/image/team-florent-profil.jpg";
 import { ReviewResponsive } from "./ReviewResponsive";
 
