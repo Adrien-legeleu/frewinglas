@@ -10,10 +10,10 @@ export default function LandingPage() {
             "radial-gradient(circle, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0) 80%)",
         }}
       />
-      <h1 className="text-6xl z-10 text-shadow text-[#ffffee] font-semibold">
+      <h1 className="sm:text-6xl text-5xl z-10 text-shadow text-[#ffffee] font-semibold">
         Frewinglas
       </h1>
-      <p className="md:text-2xl text-xl sm:text-lg z-10 text-white text-shadow backdrop-blur-[1px] rounded-3xl font-semibold max-w-3xl leading-relaxed text-center">
+      <p className="md:text-2xl text-xl sm:text-lg [430px]:text-base z-10 text-white  font-semibold max-w-3xl leading-relaxed text-center">
         Spécialisé dans la fabrication de produits métalliques sur mesure,
         Frewinglas offre des solutions durables et esthétiques pour tous vos
         projets architecturaux.
