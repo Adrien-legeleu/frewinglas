@@ -23,7 +23,7 @@ const content = [
 
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <div className="relative right-4  image-mask-container h-full w-full">
+        <div className="relative md:right-4  image-mask-container h-full w-full">
           <Image
             src={Img}
             width={800}

@@ -40,10 +40,8 @@ export default function LegalMentions() {
       </section>
 
       <section className="mb-6">
-        <h2 className="text-xl font-semibold text-neutral-700 dark:text-neutral-300 mb-2">
-          Hébergement
-        </h2>
-        <p className="text-neutral-600 dark:text-neutral-400 ">
+        <h2 className="text-xl font-semibold  mb-2">Hébergement</h2>
+        <p className="">
           Le site est hébergé par :<br />
           <strong>Hostinger</strong>
           <br />
