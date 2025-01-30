@@ -65,11 +65,11 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     >
       <div className="relative w-full">
         <div className="flex w-full  " ref={carouselRef}>
-          <div
+          {/* <div
             className={cn(
               "absolute right-0  z-[1000] h-auto  w-[5%] overflow-hidden bg-gradient-to-l"
             )}
-          ></div>
+          ></div> */}
 
           <div
             className={cn(
@@ -151,7 +151,7 @@ export const Card = ({
     <>
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 w-full h-screen z-[10000] overflow-auto">
+          <div className="fixed top-0 left-[6px] w-full h-screen z-[10000] overflow-auto">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
