@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     }
     const { data, error } = await resend.emails.send({
       from: "contact@ikovaline.com",
-      to: ["contact@ikovaline.com"],
+      to: ["f.leroux@frewinglas.com"],
 
       //   to: ["adrienlegeleu@gmail.com"],
       subject: firstname + " vous a envoyé un message",
