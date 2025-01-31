@@ -5,13 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
-    const {
-      firstname,
-
-      email,
-      tel,
-      message,
-    } = await request.json();
+    const { firstname, email, tel, message } = await request.json();
 
     if (!firstname || !email || !tel) {
       return new Response(
